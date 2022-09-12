@@ -26,8 +26,8 @@ resampling_size = 1000
 Search_data_from = '.csv'
 
 # Choose path of data
-datapath = 'D:\PyCharm\Project_folder_heidler\Create_Heidler_Single\csv_original'   # Windows
-# datapath = '/home/pi/Project_folder/csv_original'                                                # Raspi
+# datapath = 'D:\PyCharm\Project_folder_heidler\Create_Heidler_Single\csv_original'   # Windows
+datapath = '/home/pi/Project_folder_heidler2/csv_original'                        # Raspi
 
 # print(get_filename_list(datapath))
 filelist, filenamelist = get_filename_list(datapath)
@@ -42,8 +42,8 @@ else:
     print('exist file')
 
     # Create csv_resampling folder
-    csvpath = 'D:\PyCharm\Project_folder_heidler' + '/csv_resampling/'           # Windows
-    # csvpath = '/home/pi/Project_folder' + '/csv_resampling/'                     # Raspi
+    # csvpath = 'D:\PyCharm\Project_folder_heidler' + '/csv_resampling/'           # Windows
+    csvpath = '/home/pi/Project_folder_heidler2' + '/csv_resampling/'              # Raspi
 
     if not os.path.exists(csvpath):
         os.mkdir(csvpath)
