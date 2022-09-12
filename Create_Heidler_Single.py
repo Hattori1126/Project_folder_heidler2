@@ -23,7 +23,7 @@ file_name = ["10_350μs", "1_200μs", "0.25_100μs"]
 
 # Create or check data folders
 # png data
-figurepath = os.getcwd() + '/pug/'
+figurepath = os.getcwd() + '/png/'
 # figurepath = '/home/pi/Project_folder' + '/png/'
 print(figurepath)
 
