@@ -1,7 +1,6 @@
 import numpy as np
 import glob
 import os
-import scipy
 from scipy import interpolate
 
 
