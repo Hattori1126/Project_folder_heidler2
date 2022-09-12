@@ -27,7 +27,8 @@ Search_data_from = '.csv'
 
 # Choose path of data
 # datapath = 'D:\PyCharm\Project_folder_heidler\Create_Heidler_Single\csv_original'   # Windows
-datapath = '/home/pi/Project_folder_heidler2/csv_original'                        # Raspi
+# datapath = '/home/pi/Project_folder_heidler2/csv_original'                        # Raspi
+datapath =  os.getcwd() + "/csv_original"
 
 # print(get_filename_list(datapath))
 filelist, filenamelist = get_filename_list(datapath)
@@ -43,7 +44,8 @@ else:
 
     # Create csv_resampling folder
     # csvpath = 'D:\PyCharm\Project_folder_heidler' + '/csv_resampling/'           # Windows
-    csvpath = '/home/pi/Project_folder_heidler2' + '/csv_resampling/'              # Raspi
+    # csvpath = '/home/pi/Project_folder_heidler2' + '/csv_resampling/'              # Raspi
+    csvpath = os.getcwd() + '/csv_resampling/'
 
     if not os.path.exists(csvpath):
         os.mkdir(csvpath)
