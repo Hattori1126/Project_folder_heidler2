@@ -88,3 +88,4 @@ fig.savefig(figurepath + 'Hiedler_3patters_Tmax' + str(Tmax2)+ '_N' + str(datasi
 # np.savetxt(csvpath + 'Hiedler_waveform'+ '.csv', file)
 
 print('finish')
+
