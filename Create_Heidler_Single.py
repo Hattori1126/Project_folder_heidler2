@@ -23,8 +23,8 @@ file_name = ["10_350μs", "1_200μs", "0.25_100μs"]
 
 # Create or check data folders
 # png data
-# figurepath = os.getcwd() + '/pug/'
-figurepath = '/home/pi/Project_folder' + '/png/'
+figurepath = os.getcwd() + '/pug/'
+# figurepath = '/home/pi/Project_folder' + '/png/'
 print(figurepath)
 
 if not os.path.exists(figurepath):
@@ -33,8 +33,8 @@ if not os.path.exists(figurepath):
 print(os.path.exists(figurepath))
 
 # csv data
-# csvpath = os.getcwd() + '/csv_original/'
-csvpath = '/home/pi/Project_folder' + '/csv_original/'
+csvpath = os.getcwd() + '/csv_original/'
+# csvpath = '/home/pi/Project_folder' + '/csv_original/'
 print(csvpath)
 
 if not os.path.exists(csvpath):
@@ -82,5 +82,4 @@ for n in range(0, 3, 1):
     np.savetxt(csvpath + dataname + '.csv', file)
 
 
-print('github')
-#
+print('finish')
