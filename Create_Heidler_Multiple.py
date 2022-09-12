@@ -23,8 +23,8 @@ file_name = ["10_350μs", "1_200μs", "0.25_100μs"]
 
 # Create or check data folders
 # png data
-# figurepath = os.getcwd() + '/png/'
-figurepath = '/home/pi/Project_folder' + '/png/'
+figurepath = os.getcwd() + '/png/'
+# figurepath = '/home/pi/Project_folder' + '/png/'
 print(figurepath)
 
 if not os.path.exists(figurepath):
@@ -33,8 +33,8 @@ if not os.path.exists(figurepath):
 print(os.path.exists(figurepath))
 
 # csv data
-# csvpath = os.getcwd() + '/csv_original/'
-csvpath = '/home/pi/Project_folder' + '/csv_original/'
+csvpath = os.getcwd() + '/csv_original/'
+# csvpath = '/home/pi/Project_folder' + '/csv_original/'
 print(csvpath)
 
 if not os.path.exists(csvpath):
@@ -86,3 +86,5 @@ fig.savefig(figurepath + 'Hiedler_3patters_Tmax' + str(Tmax2)+ '_N' + str(datasi
 # Save CSV file
 # file = np.stack([t, i], 1)
 # np.savetxt(csvpath + 'Hiedler_waveform'+ '.csv', file)
+
+print('finish')
