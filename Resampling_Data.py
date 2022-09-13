@@ -44,7 +44,7 @@ else:
     # Create csv_resampling folder
     # csvpath = 'D:\PyCharm\Project_folder_heidler' + '/csv_resampling/'           # Windows
     # csvpath = '/home/pi/Project_folder_heidler2' + '/csv_resampling/'              # Raspi
-    csvpath = os.getcwd() + '/csv_resampling/'
+    csvpath = os.getcwd() + '/csv_resampled/'
 
     if not os.path.exists(csvpath):
         os.mkdir(csvpath)
@@ -61,7 +61,7 @@ else:
         data_transformed = np.column_stack((data_transformed, f(data_transformed)))
 
         # Save resampling data
-        np.savetxt(csvpath + 'resampling_' + filenamelist[d] + '.csv', data_transformed)
+        np.savetxt(csvpath + 'resampled_' + filenamelist[d] + '.csv', data_transformed)
 
 print('finish')
 
