@@ -5,7 +5,7 @@ import subprocess
 # File hostname
 # gdrive_foldername = '%s' % os.uname()[1]
 png_raspiadress = os.getcwd() + '/png'
-csv_resampled_raspiadress = os.getenv() + '/csv_resampled'
+csv_resampled_raspiadress = os.getcwd() + '/csv_resampled'
 
 # print(os.uname()[1])
 
