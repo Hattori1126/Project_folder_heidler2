@@ -60,7 +60,7 @@ ax.grid(color='k', alpha=0.5)
 
 ax.set_xlabel('time[μs]', fontsize=15)
 ax.set_ylabel('current[kA]', fontsize=15)
-ax.set_title('Hiedler_waveform', fontsize=20)
+ax.set_title('Heidler_waveform', fontsize=20)
 
 ax.set_xlim([0, 50])
 ax.set_ylim([0, 120])
@@ -81,7 +81,7 @@ ax.legend(title_name, loc='lower right', framealpha=1)
 plt.show()
 
 # Save png file
-fig.savefig(figurepath + 'Hiedler_3patters_Tmax' + str(Tmax2)+ '_N' + str(datasize) + '.png', dpi=300)
+fig.savefig(figurepath + 'Heidler_3patters_Tmax' + str(Tmax2)+ '_N' + str(datasize) + '.png', dpi=300)
 
 # Save CSV file
 # file = np.stack([t, i], 1)
